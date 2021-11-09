@@ -5,9 +5,23 @@
   <title>Test</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Home Work</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/list">List</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <app-root>
+    <router-outlet></router-outlet>
+  </app-root>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
